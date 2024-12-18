@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1Desktop - Noticias</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="article_elements.css" />
+    <link rel="icon" href="Multimedia/icono.ico" sizes="16x16" type="image/png">
+    <meta name="author" content="Lucas Ley" />
+    <meta name="description" content="Documento que muestra y gestiona noticias para F1 Desktop" />
+    <meta name="keywords" content="F1, noticias, fórmula 1, escritorio virtual" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/noticias.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" title="F1 Desktop">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="Inicio">Índice</a>
+            <a href="piloto.html" title="Piloto">Piloto</a>
+            <a href="noticias.html" title="Noticias">Noticias</a>
+            <a href="meteorologia.html" title="Meteorología">Meteorología</a>
+            <a href="circuito.html" title="Circuito">Circuito</a>
+            <a href="viajes.html" title="Viajes">Viajes</a>
+            <a href="juegos.html" title="Juegos">Juegos</a>
+            <a href="calendario.html" title="Calendario">Calendario</a>
+        </nav>
+    </header>
+
+   
+    
+    <label for ="archivo"> Noticias</h2>
+            <input type="file" accept=".txt" id="archivo" onchange="noticias.readInputFile(event)">
+   
+
+    
+   
+            <h2>Noticias cargadas</h2>
+            <main></main>
+         
+  
+        
+      
+            <label for ="noticia">Agregar nueva noticia</h2>
+            <input type="text" placeholder="Titular" id="noticia">
+            <input type="text" placeholder="Entradilla" id="entradilla">
+            <input type="text" placeholder="Autor" id="autor">
+            <button onclick="noticias.agregarNoticiaManual()">Agregar Noticia</button>
+       
+  
+</body>
+</html>

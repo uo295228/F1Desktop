@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>F1 - Juegos</title>
+    <link rel="stylesheet" href="memoria.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="Multimedia/icono.ico" sizes="16x16" type="image/png">
+    <meta name="author" content="Laucas Ley" />
+    <meta name="description" content="Juego de memoria de F1" />
+    <meta name="keywords" content="F1, juego, memoria, cartas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/memoria.js"></script>
+</head>
+
+<body>
+    <header>
+
+    
+      
+        <h1><a href="index.html" title="F1 Desktop">F1 Desktop</a></h1>
+      <nav>
+         <a href="index.html" title="Inicio">Indice</a> 
+          <a href="piloto.html" title="Piloto" >Piloto</a> 
+          <a href="noticias.html" title="Noticias">Noticias</a> 
+          <a href="meteorologia.html" title="Meteorlogía">Meteorologia</a> 
+          <a href="circuito.html" title="Circuito">Circuito</a>
+          <a href="viajes.html" title="Viajes">Viajes</a>
+          <a href="juegos.html" title="Juegos">Juegos</a>
+          <a href="calendario.html" title="Calendario">Calendario</a>
+      </nav>
+     </header>
+     <p>Estás en: <a href="index.html" title="Memoria">Inicio</a> | Memoria</p>
+    
+    
+        <h1>Juego de Memoria </h1>
+        
+            <main>
+                <p>
+                    Bienvenido al Juego de Memoria de F1. 
+                    El objetivo es encontrar todas las parejas de cartas iguales .<br> </br>
+                     Haz clic en dos cartas para voltearlas y revelar su contenido. Si coinciden, permanecerán visibles; si no, se voltearán de nuevo.<br> </br>
+                      ¡Intenta completar el juego en el menor tiempo posible y sin cometer errores! Diviértete.
+                </p>
+                
+
+
+            </main>
+            
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const memoria = new Memoria();
+        });
+    </script>
+</body>
+</html>
