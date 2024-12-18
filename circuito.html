@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1Desktop - Circuito</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="icon" href="Multimedia/icono.ico" sizes="16x16" type="image/png">
+    <meta name="author" content="Lucas Ley" />
+    <meta name="description" content="Circuito" />
+    <meta name="keywords" content="F1, circuito, carreras, deportes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU"></script>
+
+    <script src="js/circuito.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" title="F1 Desktop">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="Inicio">Indice</a>
+            <a href="piloto.html" title="Piloto">Piloto</a>
+            <a href="noticias.html" title="Noticias">Noticias</a>
+            <a href="meteorologia.html" title="Meteorología">Meteorologia</a>
+            <a href="circuito.html" title="Circuito" class="active">Circuito</a>
+            <a href="viajes.html" title="Viajes">Viajes</a>
+            <a href="juegos.html" title="Juegos">Juegos</a>
+            <a href="calendario.html" title="Calendario">Calendario</a>
+        </nav>
+    </header>
+    <main>
+        <label for="upload-xml">Sube un archivo XML</label>
+    <input type="file" id="upload-xml" accept=".xml" />
+    
+    <label for="upload-svg">Sube un archivo SVG</label>
+    <input type="file" id="upload-svg" accept=".svg" />
+    
+    <label for="upload-kml">Sube un archivo KML</label>
+    <input type="file" id="upload-kml" accept=".kml" />
+    <div>
+        
+    </div>
+    </main>
+</body>
+</html>

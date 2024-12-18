@@ -1,0 +1,48 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(18.75em,1fr)); /* Cuatro columnas para pantallas grandes */
+    gap: 0.5em; /* Espaciado entre artículos */
+    margin: 1em; /* Margen alrededor del contenido principal */
+}
+
+/* Artículos individuales */
+main article {
+    border: 0.2em solid #ccc;
+    padding: 0.5em; /* Aumentar el espacio interno para mayor legibilidad */
+    background-color: #000000;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 0.3em;
+    overflow: hidden; /* Evitar desbordamientos inesperados */
+    display: flex;
+    flex-direction: column; /* Asegurar que el contenido fluya de arriba hacia abajo */
+    justify-content: space-between; /* Espacio equilibrado entre los elementos */
+    height: auto; /* Permitir que los artículos se expandan según el contenido */
+}
+
+/* Botón */
+button {
+    width: 20%;
+    margin: 2em auto; /* Centrar el botón horizontalmente */
+    display: block;
+}
+
+/* Estilo para el texto dentro de cada artículo */
+main article h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+main article p {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    word-wrap: break-word; /* Forzar el ajuste de texto si hay palabras largas */
+    white-space: normal; /* Permitir saltos de línea */
+}
+
+
+
